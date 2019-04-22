@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tutorial Webpage: Tracy Smart</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="newTutorial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body>
+    
+
+<div id="tutorial-main">
+    <div class="topnav">
+        <a href="#functions">Functions</a>
+        <a href="#forLoops">For Loops</a>
+        <a href="#objects">Objects</a>
+        <a href="#arrays">Arrays</a>        
+    </div>
+        
+    <!--Header Title-->
+    <section>
+        <div class="intro">
+            <h3 class="boldIntro">Javascript can be</h3>
+            <h1 class = "animated bounce"><br>intimidating</h1>
+            <h3 class="boldIntro">It's one of the hardest subjects I've ever tried to learn. Some of the first concepts to learn about in the javascript language are arrays, objects, for loops, and functions. The following content is my attempt to break down each component into simple terms that are easy to digest.</h3>
+        </div>
+    </section>
+
+    <!--Main Content Section-->
+    <section>
+        
+    <!--Flex Box wrapper1-->  
+    <div class="itemWrapper"><a id="arrays"></a>
+        <article>
+            <div class="arrayContent">
+                <h2>Arrays</h2>
+                <p class="definitions">An array is a variable that holds more than one value at a time. It's like a list of items, separated by commas and enclosed within square brackets. The elements in an array are ordered and can be accessed by their index, beginning with 0 and ending at (total array size)-1. The elements of an array may include numbers, strings, booleans, objects, other arrays and more.</p>
+                <img src="./assets/arrayExample-sm.png" class="imageShadows">
+            </div>
+        </div> 
+            </article>
+    </div> <!--Closing tag to Flex Box wrapper1--> 
+    
+    <!--Flex Box wrapper2--> 
+    <div class="itemWrapper"><a id="objects"></a>
+        <article>
+            <div class="objectsContent">
+                <h2>Objects</h2>
+                <p class="definitions">An object may be defined as an unordered collection of related data, in the form of “key: value” pairs. It is a list of properties within curly brackets {}. A property is a “key:value” pair, where a key is a string (also called a “property name”), and the value can be anything—a string, a number, an array, and even another object. Because an object's data is not in a strict order, one must employ different techniques than those used for an array to access the data.</p>
+                <img src="./assets/objectExample-sm.png">
+            </div>
+        </article>
+    </div>  <!--Closing tag to Flex Box wrapper2--> 
+
+    <!--Flex Box wrapper3--> 
+    </a><div class="itemWrapper"><a id="forLoops"></a>
+        <article>
+            <div class="loopsContent">
+                <h2>For Loops</h2>
+                <p class="definitions">A loop is used in programming to repeat a specific block of code. The for loop provides a compact way to iterate over a range of values, such as an array. It repeatedly loops until a particular condition is satisfied.</p> 
+            
+                <p class="definitions">For loops are usually structured like this:
+                <br>
+                <strong>for (statement 1; statement 2; statement 3) {
+                <br>
+                // code block to be executed
+                <br>
+                }<br></strong>
+                <br> 
+                <strong>1. Initialization:</strong> declares the starting index, executes only once
+                <br>
+                <strong>2. Condition:</strong> defines the requirements for executing the code block
+                <br>
+                <strong>3. Increment:</strong> is executed (every time) after the code block has been executed.</p>
+                
+                <p class="definitions">The program cycles through the above commands and determines if statement 2 is true. If true, the code is executed and the loop proceeds to statement 3. There,the index is increased or decreased incrementally, and its value is checked against the condition in statement 2. The loop repeats until condition 2 is false.</p>
+                <img src="./assets/forLoopsExample-sm.png">
+            </div> <!--Closing tag to loopsContent-->     
+        </article>
+    </div>  <!--Closing tag to Flex Box wrapper3--> 
+
+     <!--Flex Box wrapper4--> 
+    </a> <div class="itemWrapper"><a id="functions">   
+        <article>
+            <div class="functionsContent">
+                <h2>Functions</h2>
+                <p class="definitions">Functions are one of the fundamental building blocks in JavaScript. A function is a JavaScript procedure—a set of statements that performs a task or calculates a value. To use a function, first it must be defined.</p>
+                
+                <p class="definitions">Defining a function does not execute it, however. Defining simply names the function and specifies what to do when it is called. Calling the function actually performs the actions specified with the given parameters.</p>
+                <p class="definitions">A function declaration consists of the function keyword, followed by:<br>
+                <strong>1. The name</strong> of the function.<br>
+                <strong>2. A list of parameters</strong> to the function, enclosed in parentheses and separated by commas.<br>
+                <strong>3. The JavaScript statements</strong> that define the function, enclosed in curly brackets<strong> { }.</strong></p>
+                   
+                <img src="./assets/functionExample-sm.png">
+            </div> <!--Closing tag to functions Content-->  
+        </article>
+    </div>  <!--Closing tag to Flex Box wrapper4-->         
+    </section>
+
+    <section>
+        <div class="sidebar">
+            <h3>My Go-to Resources</h3>
+            <hr class="rules">
+                <a href="https://www.w3schools.com/html/">W3schools.com</a>
+                <hr class="rules">
+                <a href="https://developer.mozilla.org/en-US/">MDN web docs</a>
+                <hr class="rules">    
+                <a href="https://www.codecademy.com/learn/introduction-to-javascript">codecademy.com</a>
+                <br>
+             
+        </div>
+    </section>
+    
+    <div class="footer">
+        <p>Created by Tracy Smart for Javascript PT | April 2019</p>
+    </div>
+
+
+</body>
+</html>
