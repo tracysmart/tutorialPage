@@ -10,8 +10,6 @@ body, html {
     color: black;
   }
 
-  
-
 h1 {
     font-family: 'Open Sans';
     color: white;
@@ -20,10 +18,10 @@ h1 {
     font-weight: 800;
     text-shadow: 2px 2px 4px #000000;
     /* 70% { */
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-     -webkit-transform: translate3d(0, -25px, 0);
-    transform: translate3d(0, -25px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.955, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.955, 0.05, 0.855, 0.06);
+     -webkit-transform: translate3d(0, -80px, 0);
+    transform: translate3d(0, -80px, 0);
   }
 
 
@@ -75,6 +73,7 @@ h3 {
   .topnav a {
     float: right;
     color: #fa6c0e;
+    margin: 0px;
     text-align: center;
     padding: 12px 36px;
     text-decoration: none;
@@ -83,16 +82,15 @@ h3 {
   }
   
   .topnav a:hover {
-    background-color:white
-    border: 1px solid white
+    background-color:white;
+    border: 1px solid white;
     opacity: .5;
     color: white;
   }
 
 #tutorial-main .intro {
-    padding: 20px;
-    margin: 0 auto;
-    margin-top: 0px;
+    padding: 0px;
+    margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
@@ -103,45 +101,16 @@ h3 {
 .itemWrapper {
   max-width: 1000px;
   background-color: #7096b4;
-  margin: 40px auto 0 auto;
+  margin: 40px auto 40px auto;
   line-height: 1.25;
   padding: 20px 50px 30px 50px;
   display: flex;
 }
 
-/* .arrayWrapper {
-    max-width: 1000px;
-    background-color: #7096b4;
-    margin: 40px auto 0 auto;
-    line-height: 1.25;
-    padding: 20px 50px;
-    display: flex;
-}
-
-
-.objectsWrapper {
-    max-width: 1000px;
-    background-color: gray;
-    margin: 40px auto 0 auto;
-    line-height: 1.25;
-    padding: 20px 50px;
-    display: flex;
-}
-
-
-.loopsWrapper {
-    max-width: 1000px;
-    background-color: gray;
-    margin: 40px auto 0 auto;
-    line-height: 1.25;
-    padding: 20px 50px;
-    display: flex;
-}*/
-
 #functionsWrapper {
     max-width: 1000px;
     background-color: #7096b4;
-    margin: 40px auto 40 auto;
+    margin: 40px auto 40px auto;
     line-height: 1.25;
     padding: 20px 50px;
     display: flex;
@@ -152,45 +121,65 @@ h3 {
 
 }
 
-.sidebar {
-  width: 280px;
-  position: fixed;
-  z-index: 1;
-  top: 0px;
-  left: 0px;
-  background: #335778;
-  overflow-x: hidden;
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: #7096b4;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  font-family: 'Open Sans Condensed';
+  font-weight: Bold;
+  border: none;
+  cursor: pointer;
 }
 
-.sidebar a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 22px;
-  letter-spacing: 0.1em;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
   font-weight: bold;
-  text-align: center;
-  line-height: 1.1;
   color: #fa6c0e;
+  display: none;
+  position: absolute;
+  min-width: 155px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #fa6c0e;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
 }
 
-.sidebar a:hover {
-  color: white;
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.sidebar hr {
-  size: 1px;
-  color: #09344a;
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color:#fa6c0e;
 }
 
 .footer{
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #203047;
     color: white;
     text-align: center;
+    margin-top: 20px;
   }
 
 
@@ -198,7 +187,7 @@ h3 {
     font-family: 'Open Sans Condensed';
     font-weight: 300;
     font-size: 18px;  
-    padding: 0ppx; 
+    padding: 10px; 
 } 
 
 
